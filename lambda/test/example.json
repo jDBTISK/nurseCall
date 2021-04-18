@@ -1,0 +1,31 @@
+{
+  "deviceInfo": {
+    "deviceId": "XXX",
+    "type": "button",
+    "remainingLife": 99.9,
+    "attributes": {
+      "projectRegion": "ap-northeast-1",
+      "projectName": "testRun",
+      "placementName": "testPlacement",
+      "deviceTemplateName": "sendSMS"
+    }
+  },
+  "deviceEvent": {
+    "buttonClicked": {
+      "clickType": "SINGLE",
+      "reportedTime": "2021-04-12T03:40:41.263Z"
+    }
+  },
+  "placementInfo": {
+    "projectName": "testRun",
+    "placementName": "testPlacement",
+    "attributes": {
+      "phone_numbers": "+81{任意の電話番号,カンマ区切りで複数指定可能}",
+      "body": "ナースコール!!",
+      "sender": "tester"
+    },
+    "devices": {
+      "sendSMS": "XXX"
+    }
+  }
+}
