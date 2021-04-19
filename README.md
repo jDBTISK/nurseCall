@@ -58,6 +58,7 @@ terraform apply
 - body (SMS 本文)
 
 のつの属性を定義
+
 ## Lambda Function
 
 ソースコードの doc コメント部分に書いてあるようなパラメータが `IoT 1-Click` から送られてくるので、  
