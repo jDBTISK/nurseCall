@@ -51,6 +51,13 @@ terraform apply
 
 適当にググったらたぶん詳しい方法が出る！
 
+作成したプレイスメントの属性で、
+
+- phone_numbers (SMS 送信先電話番号, カンマ区切りで複数指定可能)
+- sender (SMS の送信者名になる)
+- body (SMS 本文)
+
+のつの属性を定義
 ## Lambda Function
 
 ソースコードの doc コメント部分に書いてあるようなパラメータが `IoT 1-Click` から送られてくるので、  
