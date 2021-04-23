@@ -1,6 +1,5 @@
 from datetime import datetime, timedelta
 import logging
-import os
 
 import boto3
 
@@ -50,7 +49,9 @@ def handler(event, context):
                     # メッセージ本文
                     "body": "",
                     # 送信者
-                    "sender": ""
+                    "sender": "",
+                    # 通知先メールアドレス
+                    "email": ""
                 },
                 "devices": {
                     "sendSMS": "XXX" # デバイス識別子
@@ -104,7 +105,7 @@ def handler(event, context):
     logger.info(res)
 
     # SMS 送信結構な割合で失敗するので結局メール送信もすることにした
-    mail = os.environ["NOTICE_EMAIL"]
+    mail = attributes["email"]
     send_email(mail, mail, body_lines[0], body)
     return res
 
