@@ -20,6 +20,7 @@
     "projectName": "testRun",
     "placementName": "testPlacement",
     "attributes": {
+      "email": "{任意のメールアドレス}",
       "phone_numbers": "+81{任意の電話番号,カンマ区切りで複数指定可能}",
       "body": "ナースコール!!",
       "sender": "tester"
